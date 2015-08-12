@@ -1,0 +1,12 @@
+Section: misc
+Priority: optional
+Homepage: http://www.ksquared.org.uk
+Standards-Version: 3.9.2
+
+Package: ksquared-developer
+Version: 1.0
+Maintainer: kieran@ksquared.org.uk
+Depends: build-essential, autoconf, libtool, git-core, gitk, meld, kdiff3
+Architecture: all
+Description: Default packages for a developer
+ A meta-package to install useful and frequently used packages
