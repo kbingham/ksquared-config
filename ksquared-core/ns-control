@@ -1,0 +1,11 @@
+Section: misc
+Priority: optional
+Homepage: http://www.ksquared.org.uk
+Standards-Version: 3.9.2
+
+Package: ksquared-core
+Version: 1.0
+Maintainer: kieran@ksquared.org.uk
+Depends: lm-sensors, curl
+Architecture: all
+Description: Default packages for a ksquared system
