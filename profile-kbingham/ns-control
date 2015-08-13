@@ -1,0 +1,17 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+
+Package: profile-kbingham
+Version: 1.1
+Maintainer: Kieran Bingham <kieran@ksquared.org.uk>
+Files: dotfiles/bash_aliases /home/kbingham/.bash_aliases
+ bash_aliases.d/extract.sh /home/kbingham/.bash_aliases.d/extract.sh
+ bash_aliases.d/git-aliases.sh /home/kbingham/.bash_aliases.d/git-aliases.sh
+ bash_aliases.d/colours.sh /home/kbingham/.bash_aliases.d/colours.sh
+ dotfiles/gitconfig /home/kbingham/.gitconfig
+ sudoers.d/kbingham /etc/sudoers.d/kbingham
+
+#  <more pairs, if there's more than one file to include. Notice the starting space>
+Description: Profile support and dot files for kbingham
+ Provides profile customisation for the kbingham profile under /home/kbingham

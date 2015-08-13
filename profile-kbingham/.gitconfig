@@ -1,0 +1,12 @@
+[user]
+	email = kieranbingham@gmail.com
+	name = Kieran Bingham
+[core]
+	editor = vim
+[color]
+	ui = auto
+[alias]
+	bm = !git branch \"$@\" | grep -v \"^* (dettached\" | cut -c3- | sentaku | xargs -r git checkout | true
+
+[push]
+	default = simple

@@ -1,0 +1,10 @@
+alias reload_alias='. ~/.bash_aliases'
+alias gg='git grep'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gs='git status'
+alias gap='git add -p'
+alias gsu='git status -uno'
+alias hgrep='history | grep'
+
+alias exfat-rsync='rsync -rltDv --progress'
