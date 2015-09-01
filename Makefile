@@ -1,10 +1,10 @@
 
 ROOT=$(PWD)
-DEBS=$(ROOT)/deb
+DEBS=dists/all/multiverse/binary-amd64
 
 # The relevance of .nsc : equivs-build references ns-control files
 
-all: build $(DEBS)/Packages.gz
+all: build $(DEBS)/Packages.gz install
 
 %.nsc: %.nsc.dependancies %.nsc.template
 	@echo "Generating $@ from $^"
@@ -19,4 +19,8 @@ build: $(DEBS)
 
 $(DEBS)/Packages.gz: $(DEBS) $(wildcard $(DEBS)/*.deb)
 	dpkg-scanpackages $(DEBS) /dev/null | gzip -9c > $(DEBS)/Packages.gz
+
+
+install:
+	rsync -Pav dists janet:/var/www/ksquared.org.uk/deb/
 
