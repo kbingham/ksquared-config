@@ -1,0 +1,11 @@
+build-essential
+autoconf
+libtool
+git-core
+gitk
+meld
+kdiff3
+golang-go
+xchat
+qt4-dev-tools
+libncurses5-dev
